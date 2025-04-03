@@ -1,0 +1,27 @@
+[package]
+name = "assert_layout"
+version = "0.0.1"
+edition = "2024"
+
+authors = ["Tom Anderson <tom@ando.sh>"]
+repository = "https://github.com/andogq/assert_layout"
+license = "MIT OR Apache-2.0"
+
+keywords = ["assert", "layout", "sizeof", "offset"]
+categories = [
+    "encoding",
+    "development-tools::debugging",
+    "development-tools::testing",
+    "rust-patterns",
+]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.94"
+quote = "1.0.40"
+syn = { version = "2.0.100", features = ["full"] }
+
+[dev-dependencies]
+syn = { version = "2.0.100", features = ["full", "extra-traits"] }
